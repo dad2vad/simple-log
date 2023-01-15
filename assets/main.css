@@ -1,0 +1,76 @@
+body {
+  @apply text-gray-800;
+}
+
+::-webkit-scrollbar {
+  background: transparent;
+  @apply w-6px h-6px md:w-8px md:h-8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #e4e7eb;
+  transition: background 300;
+  @apply rounded-xl;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+  @apply rounded-xl;
+}
+
+.circle-panel {
+  @apply rounded-full border-transparent w-12 h-12 border-0 flex justify-center items-center text-gray-400 hover:text-gray-800 hover:bg-white transition-all duration-500;
+}
+.router-link-exact-active.circle-panel,
+.circle-panel-active {
+  @apply text-gray-800 border-3 border-gray-800 bg-white;
+}
+
+.panel {
+  @apply flex items-center px-3 py-1.5 text-sm md:text-base font-medium rounded-lg bg-transparent text-gray-400 hover:text-gray-800 transition duration-500;
+}
+.router-link-active.panel {
+  @apply bg-gray-200 text-gray-800;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.3s ease-in-out;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+.fade-enter-active .inner,
+.fade-leave-active .inner {
+  transition: all 0.3s ease-in-out;
+}
+
+.fade-enter-from .inner,
+.fade-leave-to .inner {
+  opacity: 0;
+  transform: scale(0);
+}
+
+.shiki {
+  @apply p-4 rounded-xl overflow-x-auto;
+}
+
+.prose pre {
+  @apply bg-gray-900;
+}
+.prose img {
+  @apply mx-auto;
+}
+.prose h2 a {
+  @apply font-bold underline-transparent;
+}
+.prose pre code {
+  @apply !bg-transparent;
+}
+.prose :where(:not(pre) > code):not(:where(.not-prose, .not-prose *))::before,
+.prose :where(:not(pre) > code):not(:where(.not-prose, .not-prose *))::after {
+  content: "" !important;
+}
