@@ -4,6 +4,7 @@ This was originally a fun & simple hackathon submission, and a demo for dev to l
 
 I have no intention at all to make profit out of this, nor I want to compete with other "project". If you want, you can read more about the project inspiration here on Readme.
 
+
 The platform will continue operating, but I have decided I will no longer work on/maintain this project. **So use it at your own risk.** If you want a stable, and more feature platform, you can try out [LogSnag](https://logsnag.com/).
 
 Sincerely,<br>
